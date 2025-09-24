@@ -724,7 +724,7 @@ function removeTypingIndicator() {
 // Send message to OpenAI API
 async function sendToAI(message) {
     try {
-        const response = await fetch(OPENAI_API_URL, {
+        const response = await fetch(OPENAI_API_URL), {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
